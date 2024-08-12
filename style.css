@@ -3,6 +3,41 @@
     #1A1A1A;
    
 }
+.links-l{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    animation-name: sui;
+    animation-duration: 2s;
+}
+.links-con{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+.stroke{
+    display: none;
+}
+.ninja{
+    display: none;
+}
+.links-l > .links-con > .linnks > ul > li{
+    margin: 15px 0;
+}
+.links-l > .links-con > .linnks > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+.links-l > .links-con > .linnks > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+
+}
+
 body{
     margin: 0;
 }
@@ -204,7 +239,6 @@ li{
     display: flex;
     justify-content: center;
     width: 85%;
-    
 }
 .service-cards > div {
     width: calc(100%/3);
@@ -3032,5 +3066,32 @@ color: white;
         flex-direction: column;
         align-items: center;
         border: 1px solid #262626;
+    }
+}
+@media (max-width:1000px){
+    .links{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+    .stroke{
+        background-color: transparent;
+        display: block;
+        border: none;
+    }
+}
+@keyframes sui {
+    0%{
+        transform: scale(1);
+        transform: translateX(-9999px);
+    }
+    50%{
+        transform: scale(1.1);
+        transform: translateX(50px);
+    }
+    100%{
+        transform: scale(1);
+        transform: translateX(0px);
     }
 }
